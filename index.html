@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Shop | Natural Beauty</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="nav-brand">Makeup Shop</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-link" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#products" class="nav-link" data-i18n="nav.products">Products</a></li>
+                    <li><a href="#" class="nav-link" data-i18n="nav.about">About</a></li>
+                    <li><a href="#" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="ri-moon-line"></i>
+                </button>
+                <button id="lang-toggle" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                    العربية
+                </button>
+                <button class="icon-btn" aria-label="Cart">
+                    <i class="ri-shopping-bag-line"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 data-i18n="hero.title">Natural Beauty, Handcrafted with Love</h1>
+                <p data-i18n="hero.subtitle">Discover our collection of organic, handmade makeup products.</p>
+                <a href="#products" class="btn" data-i18n="hero.cta">Shop Now</a>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <div class="container">
+                <h2 class="section-title" data-i18n="products.title">Our Collection</h2>
+                <div id="product-grid" class="product-grid">
+                    <!-- Products will be injected via JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Makeup Shop. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
